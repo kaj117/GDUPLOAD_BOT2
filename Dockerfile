@@ -63,11 +63,13 @@ RUN apt update && apt upgrade -y && \
 
 
 # Pypi package Repo upgrade
+Run apt install -y git python3 ffmpeg
+
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/mrjoker
-RUN git clone -b main https://github.com/kaj117/MR-JOKER_BOT /root/mrjoker
-WORKDIR /root/mrjoker
+RUN git clone -b main https://github.com/kaj117/GDUPLOAD_BOT2
+WORKDIR /root/GDUPLOAD_BOT2
 
 COPY . .
 
