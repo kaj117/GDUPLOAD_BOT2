@@ -1,4 +1,4 @@
-mport os
+import os
 import json
 import random
 import binascii
@@ -9,11 +9,11 @@ from Crypto.Cipher import AES
 from Crypto.PublicKey import RSA
 from Crypto.Util import Counter
 
-from mega.crypto import prepare_key, stringhash, encrypt_key, decrypt_key,\
+from crypto import prepare_key, stringhash, encrypt_key, decrypt_key,\
     enc_attr, dec_attr, aes_cbc_encrypt_a32
-from mega.utils import a32_to_str, str_to_a32, a32_to_base64, base64_to_a32,\
+from un import a32_to_str, str_to_a32, a32_to_base64, base64_to_a32,\
     mpi2int, base64urlencode, base64urldecode, get_chunks
-from mega.exceptions import MegaRequestException, MegaIncorrectPasswordExcetion
+from exceptions import MegaRequestException, MegaIncorrectPasswordExcetion
 
 
 class Mega(object):
