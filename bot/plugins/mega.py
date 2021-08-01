@@ -7,7 +7,7 @@ import requests
 from urlobject import URLObject
 from Crypto.Cipher import AES
 from Crypto.PublicKey import RSA
-from Crypto.Util import Counter
+from Crypto.Until import Counter
 
 from crypto import prepare_key, stringhash, encrypt_key, decrypt_key,\
     enc_attr, dec_attr, aes_cbc_encrypt_a32
