@@ -1,6 +1,6 @@
 import json
 
-from Crypto.Cipher import AES
+from crypto.Cipher import AES
 
 from un import a32_to_str, str_to_a32, a32_to_base64
 
