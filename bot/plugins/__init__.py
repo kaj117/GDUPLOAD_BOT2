@@ -1,3 +1,3 @@
 __version__ = '0.1.0'
 
-from plugins import Mega
+from bot.plugins import Mega
